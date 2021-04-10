@@ -1,0 +1,31 @@
+:root {
+  --restvel-red: #ff0000;
+  --secundary-white: #ffffff;
+  --transparent-white: rgba(255, 255, 255, 0.75);
+  --black: #000000;
+  --blue: #00a6fb;
+  --blue-black: #003554;
+  --purple: #6600ff;
+  --purple-black: #2f0049;
+  --off-white: #faf8f7;
+  --background: #e5e5e5;
+  /* Fonts */
+  --font-firaSans: 'Fira Sans Condensed', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-firaSans);
+}
+
+.background-images {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
