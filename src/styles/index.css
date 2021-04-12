@@ -6,38 +6,33 @@
     5. Otros
 */
 
-.start {
-  width: 100%;
-}
+/* -------- Hero ---------------- */
 
-.start__container {
+.hero {
   width: 100%;
+  min-width: 320px;
   max-width: 600px;
   height: 100vh;
-  max-height: 530px;
+  max-height: 615px;
   background-image: url('../assets/images/slide-iron-man-small.jpg');
 }
 
-.start-container {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+.hero__container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  max-height: 530px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 26%, #000000 100%);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, #000000 100%);
 }
 
-.start__container--logo {
+.hero__container--logo {
   width: 170px;
   height: 80px;
 }
 
-.start__container--button {
+.hero__container--button {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,35 +42,228 @@
   height: auto;
 }
 
-.start__container--button .btn-primary {
+.btn {
   position: relative;
   display: block;
-  width: 127px;
+  padding: 3px;
+  width: 129px;
   height: 36px;
-  background: rgba(0, 0, 0, 0.4);
-  border: 3px solid var(--restvel-red);
   border-radius: 15px;
+  font-family: var(--font-firaSans);
   font-size: 2rem;
-  line-height: 2.4rem;
   font-weight: 700;
-  text-decoration: none;
   text-align: center;
   color: var(--secundary-white);
+  /* Shadow */
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.7);
 }
 
-.start__container--button .btn-secundary {
-  position: relative;
-  display: block;
-  width: 127px;
-  height: 36px;
-  background-color: var(--transparent-white);
-  border-radius: 15px;
-  font-size: 2rem;
+.hero__container--button .btn-primary {
+  line-height: 2.4rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 3px solid var(--restvel-red);
+  color: var(--secundary-white);
+}
+
+.hero__container--button .btn-secundary {
   line-height: 3rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-align: center;
+  background-color: var(--transparent-white);
   color: var(--black);
-  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* ------------ Card ------------- */
+
+.card {
+  position: relative;
+  top: -95px;
+  width: 100%;
+}
+
+.card-item {
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  min-width: 320px;
+  height: 757px;
+  background-color: #d2cac5;
+  border-radius: 30px;
+}
+
+.card-item__title {
+  margin-top: 27px;
+  margin-right: 70px;
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  font-size: 3.2rem;
+}
+
+.card-item__body {
+  margin-top: 24px;
+  width: 70%;
+  min-width: 273px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+}
+
+.card-item__multimedia {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.card-item__multimedia--search {
+  margin-top: 20px;
+  padding: 6px;
+  width: 112px;
+  height: 34px;
+  background-color: var(--off-white);
+  border-radius: 25px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+.card-item__multimedia--search span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/icons/search.svg');
+  vertical-align: text-bottom;
+}
+
+.card-item__mutimedia--picture {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 70px 70px 60px 70px 70px;
+  grid-template-rows: 40px 40px 190px 40px 40px;
+  width: 100%;
+}
+
+.card-item__mutimedia--picture figure {
+  width: 200px;
+  height: 270px;
+  border-radius: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card-item__mutimedia--picture figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.mutimedia-center {
+  grid-column: 2 / 3;
+  grid-row: 2 / 5;
+  z-index: 1;
+}
+.mutimedia-down {
+  grid-column: 1 / 2;
+  grid-row: 3 / 6;
+  opacity: 0.65;
+}
+.mutimedia-up {
+  grid-column: 3 / 6;
+  grid-row: 1 / 3;
+  opacity: 0.65;
+}
+
+.card-item__mutimedia--image-gradient {
+  margin-top: 5px;
+  margin-right: 10px;
+  align-self: flex-end;
+  width: 234px;
+  height: 156.5px;
+  background-image: url('../assets/images/capitan-america.jpg');
+  background-position: top;
+}
+
+.card-image-gradient {
+  width: 234px;
+  height: 156.5px;
+  background: linear-gradient(270deg, #d2cac5 0%, rgba(210, 202, 197, 0) 9.64%),
+    linear-gradient(90deg, #d2cac5 0%, rgba(210, 202, 197, 0) 35.42%),
+    linear-gradient(113.92deg, #d2cac5 15.45%, rgba(210, 202, 197, 0) 40.32%),
+    linear-gradient(246.08deg, #d2cac5 15.45%, rgba(210, 202, 197, 0) 45.61%),
+    linear-gradient(228.26deg, #d2cac5 14.95%, rgba(210, 202, 197, 0) 64.76%),
+    linear-gradient(
+      180deg,
+      #d2cac5 0%,
+      rgba(210, 202, 197, 0) 14.06%,
+      rgba(210, 202, 197, 0) 20.83%,
+      rgba(210, 202, 197, 0) 64.58%,
+      rgba(210, 202, 197, 0) 90.1%
+    ),
+    linear-gradient(114.04deg, #d2cac5 11.98%, rgba(210, 202, 197, 0) 33.85%);
+}
+
+.background-red {
+  background-color: #b85a5f;
+}
+
+.card-item__img {
+  width: 100%;
+  height: 264px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(184, 90, 95, 0.35) 65.62%,
+      #b85a5f 100%
+    ),
+    url('../assets/images/slide-capitan-america.jpg');
+  border-radius: 30px 30px 0px 0px;
+}
+
+.title-save {
+  margin-top: 0px;
+}
+
+.card-item__multimedia-save {
+  margin-top: 40px;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 275px;
+  height: 275px;
+  background-image: url('../assets/images/end-avengers.jpg');
+  border-radius: 32px;
+  opacity: 0.7;
+}
+
+.card-item__multimedia-save h5 {
+  font-size: 2.8rem;
+  line-height: 3.3.6rem;
+  color: var(--off-white);
+}
+
+.card-item__mutimedia-save--picture {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+}
+
+.card-item__mutimedia-save--picture figure {
+  width: 70px;
+  height: 70px;
+}
+.card-item__mutimedia-save--picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  opacity: 1;
 }

@@ -24,6 +24,20 @@ html {
   font-family: var(--font-firaSans);
 }
 
+h1,
+h2 {
+  font-weight: bold;
+  line-height: 3.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background: var(--black);
+}
+
 .background-images {
   background-size: cover;
   background-position: center;
