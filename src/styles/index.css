@@ -18,13 +18,21 @@
 }
 
 .hero__container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
+}
+
+.gradient__img-top {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, #000000 100%);
+}
+.gradient__img-bottom {
+  top: -1px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 10%, #000000 100%);
 }
 
 .hero__container--logo {
@@ -42,33 +50,21 @@
   height: auto;
 }
 
-.btn {
-  position: relative;
-  display: block;
-  padding: 3px;
-  width: 129px;
-  height: 36px;
-  border-radius: 15px;
-  font-family: var(--font-firaSans);
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
+.hero__container--button .hero-btn-primary {
+  line-height: 2.4rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 3px solid var(--restvel-red);
   color: var(--secundary-white);
   /* Shadow */
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero__container--button .btn-primary {
-  line-height: 2.4rem;
-  background: rgba(0, 0, 0, 0.4);
-  border: 3px solid var(--restvel-red);
-  color: var(--secundary-white);
-}
-
-.hero__container--button .btn-secundary {
+.hero__container--button .hero-btn-secundary {
   line-height: 3rem;
   background-color: var(--transparent-white);
   color: var(--black);
+  /* Shadow */
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* ------------ Card ------------- */
@@ -179,19 +175,21 @@
   opacity: 0.65;
 }
 
+/*  Second Card */
+
 .card-item__mutimedia--image-gradient {
-  margin-top: 5px;
-  margin-right: 10px;
+  margin-top: 13px;
+  margin-right: 12px;
   align-self: flex-end;
-  width: 234px;
-  height: 156.5px;
+  width: 225px;
+  height: 150px;
   background-image: url('../assets/images/capitan-america.jpg');
   background-position: top;
 }
 
 .card-image-gradient {
-  width: 234px;
-  height: 156.5px;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(270deg, #d2cac5 0%, rgba(210, 202, 197, 0) 9.64%),
     linear-gradient(90deg, #d2cac5 0%, rgba(210, 202, 197, 0) 35.42%),
     linear-gradient(113.92deg, #d2cac5 15.45%, rgba(210, 202, 197, 0) 40.32%),
@@ -211,10 +209,13 @@
 .background-red {
   background-color: #b85a5f;
 }
+.background-blue {
+  background-color: #a6b8c8;
+}
 
-.card-item__img {
+.card-item__img-cp {
   width: 100%;
-  height: 264px;
+  height: 262px;
   background-image: linear-gradient(
       180deg,
       rgba(184, 90, 95, 0.35) 65.62%,
@@ -236,9 +237,13 @@
   justify-content: flex-end;
   width: 275px;
   height: 275px;
-  background-image: url('../assets/images/end-avengers.jpg');
+  background-image: linear-gradient(
+      180deg,
+      rgba(184, 90, 95, 0.35) 65.62%,
+      #b85a5f 100%
+    ),
+    url('../assets/images/end-avengers.jpg');
   border-radius: 32px;
-  opacity: 0.7;
 }
 
 .card-item__multimedia-save h5 {
@@ -265,5 +270,82 @@
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
-  opacity: 1;
+}
+
+/*  Third Card */
+
+.card-item__img-hulk {
+  width: 100%;
+  height: 260px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(166, 184, 200, 0.6) 0%,
+      rgba(216, 224, 231, 0.264) 23.44%,
+      rgba(255, 255, 255, 0) 52.08%,
+      rgba(226, 232, 237, 0.326087) 76.04%,
+      #a6b8c8 100%
+    ),
+    url('../assets/images/port-hulk.jpg');
+
+  border-radius: 30px 30px 0px 0px;
+}
+
+.card-item__multimedia-share {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 42px);
+  grid-template-rows: repeat(10, 30px);
+  width: 90%;
+  min-width: 300px;
+  max-width: 400px;
+  height: auto;
+  max-height: 300px;
+}
+
+.card-item__multimedia-share figure {
+  border-radius: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card-item__multimedia-share figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.card-item__multimedia-share .img__center {
+  width: 200px;
+  height: 270px;
+  grid-column: 3 / 6;
+  grid-row: 2 / 10;
+}
+
+.card-item__multimedia-share .img__bottom-left {
+  width: 170px;
+  height: 170px;
+  grid-column: 1 / 3;
+}
+
+.card-item__multimedia-share .img__bottom-right {
+  width: 100px;
+  height: 100px;
+  grid-column: 7.5 / 9;
+}
+
+.card-item__multimedia-share .img__top-left {
+  width: 100px;
+  height: 100px;
+  grid-column: 1 /2;
+}
+.card-item__multimedia-share .img__top-right {
+  width: 70px;
+  height: 70px;
+  grid-column: 1 /2;
+}
+.card-item__multimedia-share .img__right {
+  width: 100px;
+  height: 100px;
+  grid-column: 1 /2;
 }
