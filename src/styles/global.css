@@ -24,6 +24,10 @@ html {
   font-family: var(--font-firaSans);
 }
 
+body {
+  background: var(--black);
+}
+
 h1,
 h2 {
   font-weight: bold;
@@ -32,10 +36,6 @@ h2 {
 
 a {
   text-decoration: none;
-}
-
-main {
-  background: var(--black);
 }
 
 .background-images {

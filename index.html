@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/login.css" />
+    <link rel="stylesheet" href="./src/styles/register.css" />
+  </head>
+  <body>
+    <main>
+      <!-- <section class="hero background-images">
+        <div class="hero__container gradient__img-top">
+          <figure>
+            <img
+              class="hero__container--logo"
+              src="./src/assets/images/logo-restvel.png"
+              alt="Logo-restvel"
+            />
+          </figure>
+          <div class="hero__container--button">
+            <a href="#" class="btn hero-btn-primary">Login</a>
+            <a href="#" class="btn hero-btn-secundary">Register</a>
+          </div>
+        </div>
+      </section> -->
+      <section class="register background-images">
+        <div class="register-container gradient__img-top">
+          <div class="register__content">
+            <figure>
+              <img
+                class="register__content--logo"
+                src="./src/assets/images/logo-restvel.png"
+                alt="Logo-restvel"
+              />
+            </figure>
+            <h2 class="register__content--title">Welcome to Restvel</h2>
+            <p class="register__content--subtitle">Find new ideas to try</p>
+            <form class="register__content--form">
+              <label for="email">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  class="input"
+                />
+              </label>
+              <label for="password">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  class="input"
+                />
+              </label>
+              <label for="age">
+                <input type="age" id="age" placeholder="Age" class="input" />
+              </label>
+              <button class="btn btn-primary btn-register" type="submit">
+                Continue
+              </button>
+            </form>
+            <div class="divLine">
+              <span class="divLineText">
+                <span class="line-left"></span>
+                <span>OR</span>
+                <span class="line-right"></span>
+              </span>
+            </div>
+            <section class="register__content--social-media">
+              <a
+                href="#"
+                class="btn btn-primary btn-social-media social-media-facebook"
+              >
+                <img
+                  src="./src/assets/icons/facebook-white.svg"
+                  alt="facebook-icon"
+                />
+                Continue with Facebook
+              </a>
+              <a
+                href=""
+                class="btn btn-primary btn-social-media social-media-google"
+              >
+                <img src="./src/assets/icons/google.svg" alt="google-icon" />
+                Continue with Google
+              </a>
+            </section>
+            <p class="register__content--sign-up">
+              Not on Restvel yet? <a href="#">Sign in</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="login background-images">
+        <div class="login-container gradient__img-top">
+          <div class="login__content">
+            <figure>
+              <img
+                class="login__content--logo"
+                src="./src/assets/images/logo-restvel.png"
+                alt="Logo-restvel"
+              />
+            </figure>
+            <h2 class="login__content--title">Welcome to Restvel</h2>
+            <form class="login__content--form">
+              <label for="email">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  class="input"
+                />
+              </label>
+              <label for="password">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  class="input"
+                />
+              </label>
+              <div class="login__content--remember-me">
+                <a href="#">Forgot your password?</a>
+              </div>
+              <button class="btn btn-primary btn-login" type="submit">
+                Login
+              </button>
+            </form>
+            <div class="divLine">
+              <span class="divLineText">
+                <span class="line-left"></span>
+                <span>OR</span>
+                <span class="line-right"></span>
+              </span>
+            </div>
+            <section class="login__content--social-media">
+              <a
+                href="#"
+                class="btn btn-primary btn-social-media social-media-facebook"
+              >
+                <img
+                  src="./src/assets/icons/facebook-white.svg"
+                  alt="facebook-icon"
+                />
+                Continue with Facebook
+              </a>
+              <a
+                href=""
+                class="btn btn-primary btn-social-media social-media-google"
+              >
+                <img src="./src/assets/icons/google.svg" alt="google-icon" />
+                Continue with Google
+              </a>
+            </section>
+            <p class="login__content--sign-up">
+              Not on Restvel yet? <a href="#">Sign up</a>
+            </p>
+          </div>
+        </div>
+      </section> -->
+      <section class="card">
+        <div class="card__container">
+          <!--  -->
+          <!--  -->
+          <div class="card-item">
+            <h2 class="card-item__title">Search for an idea</h2>
+            <p class="card-item__body">
+              What do you want to try next? Search for something you're
+              into--like.
+            </p>
+            <div class="card-item__multimedia">
+              <p class="card-item__multimedia--search">
+                <span class="background-images"></span> Iron man
+              </p>
+              <div class="card-item__mutimedia--picture">
+                <figure class="mutimedia-center">
+                  <img
+                    src="./src/assets/images/iron-man-fly.jpg"
+                    alt="iron-man-fly"
+                  />
+                </figure>
+                <figure class="mutimedia-down">
+                  <img
+                    src="./src/assets/images/iron-man-head.jpg"
+                    alt="iron-man-head"
+                  />
+                </figure>
+                <figure class="mutimedia-up">
+                  <img
+                    src="./src/assets/images/iron-man-armor.jpg"
+                    alt="iron-man-armor"
+                  />
+                </figure>
+              </div>
+              <div
+                class="card-item__mutimedia--image-gradient background-images"
+              >
+                <div class="card-image-gradient"></div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="card-item background-red">
+            <div class="card-item__img-cp background-images"></div>
+            <h2 class="card-item__title title-save">Save ideas you like</h2>
+            <p class="card-item__body">
+              Collect your favorites so you can get back to them later
+            </p>
+            <div class="card-item__multimedia-save background-images">
+              <h5>Favorites Heroes</h5>
+              <div class="card-item__mutimedia-save--picture">
+                <figure>
+                  <img
+                    src="./src/assets/images/iron-man-fly.jpg"
+                    alt="iron-man-fly"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="./src/assets/images/iron-man-head.jpg"
+                    alt="iron-man-head"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="./src/assets/images/iron-man-armor.jpg"
+                    alt="iron-man-armor"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="card-item background-blue">
+            <div class="card-item__img-hulk background-images"></div>
+            <h2 class="card-item__title title-save">
+              Make it, try it, do it, share it
+            </h2>
+            <p class="card-item__body">
+              The best part of Restvel is trying new things and discovering what
+              you love.
+            </p>
+            <div class="card-item__multimedia-share">
+              <figure class="img__center">
+                <img
+                  src="./src/assets/images/iron-man-fly.jpg"
+                  alt="iron-man-fly"
+                />
+              </figure>
+              <!-- <figure class="img__bottom-left">
+                <img
+                  src="./src/assets/images/iron-man-fly.jpg"
+                  alt="iron-man-fly"
+                />
+              </figure>
+              <figure class="img__bottom-right">
+                <img
+                  src="./src/assets/images/iron-man-fly.jpg"
+                  alt="iron-man-fly"
+                />
+              </figure>
+              <figure class="img__top-left">
+                <img
+                  src="./src/assets/images/iron-man-fly.jpg"
+                  alt="iron-man-fly"
+                />
+              </figure>
+              <figure class="img__top-right">
+                <img
+                  src="./src/assets/images/iron-man-head.jpg"
+                  alt="iron-man-head"
+                />
+              </figure>
+              <figure class="img__right">
+                <img
+                  src="./src/assets/images/iron-man-armor.jpg"
+                  alt="iron-man-armor"
+                />
+              </figure> -->
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+      <section class="hero background-images">
+        <div class="hero__container gradient__img-bottom">
+          <figure>
+            <img
+              class="hero__container--logo"
+              src="./src/assets/images/logo-restvel.png"
+              alt="Logo-restvel"
+            />
+          </figure>
+          <div class="hero__container--button">
+            <a href="#" class="btn hero-btn-primary">Login</a>
+            <a href="#" class="btn hero-btn-secundary">Register</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

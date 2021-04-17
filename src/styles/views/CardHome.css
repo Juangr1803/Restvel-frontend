@@ -1,0 +1,280 @@
+.card {
+  position: relative;
+  top: -95px;
+  width: 100%;
+}
+
+.card-item {
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  min-width: 320px;
+  height: 757px;
+  background-color: #d2cac5;
+  border-radius: 30px;
+}
+
+.card-item__title {
+  margin-top: 27px;
+  margin-right: 70px;
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  font-size: 3.2rem;
+}
+
+.card-item__body {
+  margin-top: 24px;
+  width: 70%;
+  min-width: 273px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+}
+
+.card-item__multimedia {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.card-item__multimedia--search {
+  margin-top: 20px;
+  padding: 6px;
+  width: 112px;
+  height: 34px;
+  background-color: var(--off-white);
+  border-radius: 25px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+.card-item__multimedia--search span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('@assets/icons/search.svg');
+  vertical-align: text-bottom;
+}
+
+.card-item__mutimedia--picture {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 70px 70px 60px 70px 70px;
+  grid-template-rows: 40px 40px 190px 40px 40px;
+  width: 100%;
+}
+
+.card-item__mutimedia--picture figure {
+  width: 200px;
+  height: 270px;
+  border-radius: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card-item__mutimedia--picture figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.mutimedia-center {
+  grid-column: 2 / 3;
+  grid-row: 2 / 5;
+  z-index: 1;
+}
+.mutimedia-down {
+  grid-column: 1 / 2;
+  grid-row: 3 / 6;
+  opacity: 0.65;
+}
+.mutimedia-up {
+  grid-column: 3 / 6;
+  grid-row: 1 / 3;
+  opacity: 0.65;
+}
+
+/*  Second Card */
+
+.card-item__mutimedia--image-gradient {
+  margin-top: 13px;
+  margin-right: 12px;
+  align-self: flex-end;
+  width: 225px;
+  height: 150px;
+  background-image: url('@assets/images/capitan-america.jpg');
+  background-position: top !important;
+}
+
+.card-image-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #d2cac5 0%, rgba(210, 202, 197, 0) 9.64%),
+    linear-gradient(90deg, #d2cac5 0%, rgba(210, 202, 197, 0) 35.42%),
+    linear-gradient(113.92deg, #d2cac5 15.45%, rgba(210, 202, 197, 0) 40.32%),
+    linear-gradient(246.08deg, #d2cac5 15.45%, rgba(210, 202, 197, 0) 45.61%),
+    linear-gradient(228.26deg, #d2cac5 14.95%, rgba(210, 202, 197, 0) 64.76%),
+    linear-gradient(
+      180deg,
+      #d2cac5 0%,
+      rgba(210, 202, 197, 0) 14.06%,
+      rgba(210, 202, 197, 0) 20.83%,
+      rgba(210, 202, 197, 0) 64.58%,
+      rgba(210, 202, 197, 0) 90.1%
+    ),
+    linear-gradient(114.04deg, #d2cac5 11.98%, rgba(210, 202, 197, 0) 33.85%);
+}
+
+.background-red {
+  background-color: #b85a5f;
+}
+.background-blue {
+  background-color: #a6b8c8;
+}
+
+.card-item__img-cp {
+  width: 100%;
+  height: 262px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(184, 90, 95, 0.35) 65.62%,
+      #b85a5f 100%
+    ),
+    url('@assets/images/slide-capitan-america.jpg');
+  border-radius: 30px 30px 0px 0px;
+}
+
+.title-save {
+  margin-top: 0px;
+}
+
+.card-item__multimedia-save {
+  margin-top: 40px;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 275px;
+  height: 275px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(184, 90, 95, 0.35) 65.62%,
+      #b85a5f 100%
+    ),
+    url('@assets/images/end-avengers.jpg');
+  border-radius: 32px;
+}
+
+.card-item__multimedia-save h5 {
+  font-size: 2.8rem;
+  line-height: 3.3.6rem;
+  color: var(--off-white);
+}
+
+.card-item__mutimedia-save--picture {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+}
+
+.card-item__mutimedia-save--picture figure {
+  width: 70px;
+  height: 70px;
+}
+.card-item__mutimedia-save--picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/*  Third Card */
+
+.card-item__img-hulk {
+  width: 100%;
+  height: 260px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(166, 184, 200, 0.6) 0%,
+      rgba(216, 224, 231, 0.264) 23.44%,
+      rgba(255, 255, 255, 0) 52.08%,
+      rgba(226, 232, 237, 0.326087) 76.04%,
+      #a6b8c8 100%
+    ),
+    url('@assets/images/port-hulk.jpg');
+
+  border-radius: 30px 30px 0px 0px;
+}
+
+.card-item__multimedia-share {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 42px);
+  grid-template-rows: repeat(10, 30px);
+  width: 90%;
+  min-width: 300px;
+  max-width: 400px;
+  height: auto;
+  max-height: 300px;
+}
+
+.card-item__multimedia-share figure {
+  border-radius: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card-item__multimedia-share figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.card-item__multimedia-share .img__center {
+  width: 200px;
+  height: 270px;
+  grid-column: 3 / 6;
+  grid-row: 2 / 10;
+}
+
+.card-item__multimedia-share .img__bottom-left {
+  width: 170px;
+  height: 170px;
+  grid-column: 1 / 3;
+}
+
+.card-item__multimedia-share .img__bottom-right {
+  width: 100px;
+  height: 100px;
+  grid-column: 7.5 / 9;
+}
+
+.card-item__multimedia-share .img__top-left {
+  width: 100px;
+  height: 100px;
+  grid-column: 1 /2;
+}
+.card-item__multimedia-share .img__top-right {
+  width: 70px;
+  height: 70px;
+  grid-column: 1 /2;
+}
+.card-item__multimedia-share .img__right {
+  width: 100px;
+  height: 100px;
+  grid-column: 1 /2;
+}
